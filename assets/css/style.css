@@ -1,0 +1,28 @@
+/* style.css */
+.active {
+    color: #3b82f6;
+    font-weight: 600;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(255, 255, 255, 0.1);
+}
+
+.profile-img {
+    box-shadow: 0 20px 25px -5px rgba(255, 255, 255, 0.1), 0 10px 10px -5px rgba(255, 255, 255, 0.04);
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+.timeline-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 32px;
+    height: calc(100% - 32px);
+    width: 2px;
+    background-color: #374151;
+}
